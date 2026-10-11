@@ -1,0 +1,54 @@
+{
+    "name": "Java Notes",
+    "image": "mcr.microsoft.com/devcontainers/java:21",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "ms-vsliveshare.vsliveshare",
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                // Visual Clutter & Ghost Elements
+                "editor.inlayHints.enabled": "off",
+                "editor.codeLens": false,
+                "editor.stickyScroll.enabled": false,
+                "editor.minimap.enabled": false,
+                "editor.hover.enabled": "onKeyboardModifier",
+                // Auto-Insertion Behaviors
+                "editor.autoClosingBrackets": "never",
+                "editor.autoClosingQuotes": "never",
+                "editor.autoSurround": "never",
+                // Popups & Completion Distractions
+                "editor.quickSuggestions": {
+                    "other": "off",
+                    "comments": "off",
+                    "strings": "off"
+                },
+                "editor.parameterHints.enabled": false,
+                "editor.inlineSuggest.enabled": false,
+                "java.referencesCodeLens.enabled": false,
+                "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+                "java.debug.settings.console": "internalConsole",
+                "java.server.launchMode": "Standard",
+                "workbench.editor.empty.hint": "hidden",
+                "workbench.editorAssociations": {
+                    "*.md": "vscode.markdown.preview.editor"
+                },
+                "files.exclude": {
+                    ".gitignore": true,
+                    "**/.*": true
+                },
+                "java.project.referencedLibraries": [
+                    ".devcontainer/Peek.jar"
+                ],
+                "github.copilot.enable": {
+                    "*": false
+                },
+                "github.copilot.nextEditSuggestions.enabled": false
+            }
+        }
+    }
+}
