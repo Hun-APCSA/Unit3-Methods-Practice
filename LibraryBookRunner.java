@@ -19,8 +19,21 @@ public class LibraryBookRunner {
         book3.addPagesRead(100);
         book2.checkOut();
 
-        String title = book1.getTitle();
+        book2 = null;
+        book1 = null;
+        book1 = book3;
 
+        // NullPointerException
+        // book2.checkOut();
+
+        String title = book1.getTitle();
+        title = "Hello";
+        // title.charAt(7);
+        String title2 = title;
+        Peek.at(title);
         book1.returnBook();
+        title.toUpperCase();
+        // NumberFormatExeption
+        // Integer.parseInt("hello");
     }
 }

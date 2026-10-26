@@ -30,6 +30,7 @@ public class LibraryBook {
     }
 
     public long generateFakeISBN(int suffix) {
+        // local variable
         long step1 = bookID * 100;
 
         int firstLetter = title.charAt(0);
